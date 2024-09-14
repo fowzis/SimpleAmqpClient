@@ -1,0 +1,145 @@
+
+======== Exporting recipe to the cache ========
+simpleamqpclient/2.5.1@magic/stable: Exporting package recipe: /home/fowzis/projects/SimpleAmqpClient/conanfile.py
+simpleamqpclient/2.5.1@magic/stable: Copied 1 '.py' file: conanfile.py
+simpleamqpclient/2.5.1@magic/stable: Copied 1 '.txt' file: CMakeLists.txt
+simpleamqpclient/2.5.1@magic/stable: Copied 1 '.in' file: libSimpleAmqpClient.pc.in
+simpleamqpclient/2.5.1@magic/stable: Copied 10 '.cpp' files
+simpleamqpclient/2.5.1@magic/stable: Copied 19 '.h' files
+simpleamqpclient/2.5.1@magic/stable: Exported to cache folder: /home/fowzis/.conan2/p/simplf4e2e7a4a62ad/e
+simpleamqpclient/2.5.1@magic/stable: Exported: simpleamqpclient/2.5.1@magic/stable#594df1b4cc7b8216307fc85c9a947b26 (2024-09-14 17:58:42 UTC)
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=11
+os=Linux
+[conf]
+tools.files.download:verify=False
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=gcc
+compiler.cppstd=gnu17
+compiler.libcxx=libstdc++11
+compiler.version=11
+os=Linux
+[conf]
+tools.files.download:verify=False
+
+
+======== Computing dependency graph ========
+Graph root
+    cli
+Requirements
+    simpleamqpclient/2.5.1@magic/stable#594df1b4cc7b8216307fc85c9a947b26 - Cache
+
+======== Computing necessary packages ========
+simpleamqpclient/2.5.1@magic/stable: Forced build from source
+Requirements
+    simpleamqpclient/2.5.1@magic/stable#594df1b4cc7b8216307fc85c9a947b26:b5494123a5bd37aa6b4c8cc3adc4063c59b65750 - Build
+
+======== Installing packages ========
+
+-------- Installing package simpleamqpclient/2.5.1@magic/stable (1 of 1) --------
+simpleamqpclient/2.5.1@magic/stable: Building from source
+simpleamqpclient/2.5.1@magic/stable: Package simpleamqpclient/2.5.1@magic/stable:b5494123a5bd37aa6b4c8cc3adc4063c59b65750
+simpleamqpclient/2.5.1@magic/stable: Copying sources to build folder
+simpleamqpclient/2.5.1@magic/stable: Building your package in /home/fowzis/.conan2/p/b/simpl523d7737398b2/b
+simpleamqpclient/2.5.1@magic/stable: Calling generate()
+simpleamqpclient/2.5.1@magic/stable: Generators folder: /home/fowzis/.conan2/p/b/simpl523d7737398b2/b/build/Release/generators
+simpleamqpclient/2.5.1@magic/stable: CMakeToolchain generated: conan_toolchain.cmake
+simpleamqpclient/2.5.1@magic/stable: CMakeToolchain generated: /home/fowzis/.conan2/p/b/simpl523d7737398b2/b/build/Release/generators/CMakePresets.json
+simpleamqpclient/2.5.1@magic/stable: CMakeToolchain generated: /home/fowzis/.conan2/p/b/simpl523d7737398b2/b/CMakeUserPresets.json
+simpleamqpclient/2.5.1@magic/stable: Generating aggregated env files
+simpleamqpclient/2.5.1@magic/stable: Generated aggregated env files: ['conanbuild.sh', 'conanrun.sh']
+simpleamqpclient/2.5.1@magic/stable: Calling build()
+simpleamqpclient/2.5.1@magic/stable: Running CMake.configure()
+simpleamqpclient/2.5.1@magic/stable: RUN: cmake -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE="generators/conan_toolchain.cmake" -DCMAKE_INSTALL_PREFIX="/home/fowzis/.conan2/p/b/simpl523d7737398b2/p" -DCMAKE_POLICY_DEFAULT_CMP0091="NEW" -DCMAKE_BUILD_TYPE="Release" "/home/fowzis/.conan2/p/b/simpl523d7737398b2/b"
+-- Using Conan toolchain: /home/fowzis/.conan2/p/b/simpl523d7737398b2/b/build/Release/generators/conan_toolchain.cmake
+-- Conan toolchain: Defining architecture flag: -m64
+-- Conan toolchain: C++ Standard 17 with extensions ON
+-- Conan toolchain: Setting BUILD_SHARED_LIBS = ON
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Warning: Standard CMAKE_CXX_STANDARD value defined in conan_toolchain.cmake to 17 has been modified to 98 by /home/fowzis/.conan2/p/b/simpl523d7737398b2/b/CMakeLists.txt
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE dot) 
+CMake Warning at CMakeLists.txt:287 (message):
+  Using target /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.74.0 as a
+  library
+
+
+CMake Warning at CMakeLists.txt:287 (message):
+  Using target /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 as a
+  library
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fowzis/.conan2/p/b/simpl523d7737398b2/b/build/Release
+
+simpleamqpclient/2.5.1@magic/stable: Running CMake.build()
+simpleamqpclient/2.5.1@magic/stable: RUN: cmake --build "/home/fowzis/.conan2/p/b/simpl523d7737398b2/b/build/Release" -- -j16
+[ 18%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/AmqpException.cpp.o
+[ 18%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/BasicMessage.cpp.o
+[ 27%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/AmqpLibraryException.cpp.o
+[ 36%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/Envelope.cpp.o
+[ 54%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/Channel.cpp.o
+[ 54%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/ChannelImpl.cpp.o
+[ 63%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/AmqpResponseLibraryException.cpp.o
+[ 72%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/Table.cpp.o
+[ 81%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/MessageReturnedException.cpp.o
+[ 90%] Building CXX object CMakeFiles/SimpleAmqpClient.dir/src/TableImpl.cpp.o
+[100%] Linking CXX shared library libSimpleAmqpClient.so
+[100%] Built target SimpleAmqpClient
+
+simpleamqpclient/2.5.1@magic/stable: Package 'b5494123a5bd37aa6b4c8cc3adc4063c59b65750' built
+simpleamqpclient/2.5.1@magic/stable: Build folder /home/fowzis/.conan2/p/b/simpl523d7737398b2/b/build/Release
+simpleamqpclient/2.5.1@magic/stable: Generating the package
+simpleamqpclient/2.5.1@magic/stable: Packaging in folder /home/fowzis/.conan2/p/b/simpl523d7737398b2/p
+simpleamqpclient/2.5.1@magic/stable: Calling package()
+simpleamqpclient/2.5.1@magic/stable: Running CMake.install()
+simpleamqpclient/2.5.1@magic/stable: RUN: cmake --install "/home/fowzis/.conan2/p/b/simpl523d7737398b2/b/build/Release" --prefix "/home/fowzis/.conan2/p/b/simpl523d7737398b2/p"
+-- Install configuration: "Release"
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/lib/libSimpleAmqpClient.so.7.0.1
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/lib/libSimpleAmqpClient.so.7
+-- Set runtime path of "/home/fowzis/.conan2/p/b/simpl523d7737398b2/p/lib/libSimpleAmqpClient.so.7.0.1" to ""
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/lib/libSimpleAmqpClient.so
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/AmqpException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/AmqpLibraryException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/AmqpResponseLibraryException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/BadUriException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/BasicMessage.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/Channel.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/ConnectionClosedException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/ConsumerCancelledException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/ConsumerTagNotFoundException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/Envelope.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/MessageReturnedException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/MessageRejectedException.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/SimpleAmqpClient.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/Table.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/Util.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/include/SimpleAmqpClient/Version.h
+-- Installing: /home/fowzis/.conan2/p/b/simpl523d7737398b2/p/lib/pkgconfig/libSimpleAmqpClient.pc
+
+simpleamqpclient/2.5.1@magic/stable: package(): Packaged 16 '.h' files
+simpleamqpclient/2.5.1@magic/stable: package(): Packaged 1 '.7' file: libSimpleAmqpClient.so.7
+simpleamqpclient/2.5.1@magic/stable: package(): Packaged 1 '.1' file: libSimpleAmqpClient.so.7.0.1
+simpleamqpclient/2.5.1@magic/stable: package(): Packaged 1 '.so' file: libSimpleAmqpClient.so
+simpleamqpclient/2.5.1@magic/stable: package(): Packaged 1 '.pc' file: libSimpleAmqpClient.pc
+simpleamqpclient/2.5.1@magic/stable: Created package revision 10cdb97d84a1ec124525ea44cdaad177
+simpleamqpclient/2.5.1@magic/stable: Package 'b5494123a5bd37aa6b4c8cc3adc4063c59b65750' created
+simpleamqpclient/2.5.1@magic/stable: Full package reference: simpleamqpclient/2.5.1@magic/stable#594df1b4cc7b8216307fc85c9a947b26:b5494123a5bd37aa6b4c8cc3adc4063c59b65750#10cdb97d84a1ec124525ea44cdaad177
+simpleamqpclient/2.5.1@magic/stable: Package folder /home/fowzis/.conan2/p/b/simpl523d7737398b2/p
